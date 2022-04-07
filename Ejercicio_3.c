@@ -29,9 +29,24 @@ struct Cliente
 char *TiposProductos[]={"Galletas","Snack","Cigarrillos","Caramelos","Bebidas"};
 
 //Declaracion de funciones
-
+void altaCliente(int cant); //Creara a cada cliente
 
 int main()
 {
+    int cantClientes;
+
+    printf("\nQue cantidad de clientes desea ingresar: ");
+    gets(cantClientes);
+    altaCliente(cantClientes);
     return 0;
+}
+
+void altaCliente(int cant)
+{
+    struct Cliente *ListadoClientes;
+    int i;
+    ListadoClientes = 
+    for(i=0;i<cant;i++)
+    {
+    }
 }
