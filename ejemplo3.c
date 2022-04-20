@@ -2,12 +2,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+char *TiposProductos[]={"Galletas","Snack","Cigarrillos","Caramelos","Bebidas"};
 int main() 
 {
     char *Buff; //variable auxiliar
     char *Nombre;
     char *Apellido;
     Buff= (char *) malloc(100*sizeof(char));
+    //Buff = TiposProductos[2];
+    strcpy(Buff, TiposProductos[2]);
+    printf("%s\n",Buff);
     printf("Ingrese sus nombres: ");
     gets(Buff);
     Nombre= (char *) malloc((strlen(Buff)+1)*sizeof(char));
